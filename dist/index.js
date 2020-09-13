@@ -345,7 +345,7 @@ const childProcess = __webpack_require__(129);
  * @type {string}
  */
 // istanbul ignore next
-let binaryPath = __webpack_require__.ab + "sentry-cli.exe";
+let binaryPath = __webpack_require__.ab + "sentry-cli";
 /**
  * Overrides the default binary path with a mock value, useful for testing.
  *
@@ -438,7 +438,7 @@ function prepareCommand(command, schema, options) {
  * @returns {string}
  */
 function getPath() {
-  return __webpack_require__.ab + "sentry-cli.exe";
+  return __webpack_require__.ab + "sentry-cli";
 }
 
 /**
