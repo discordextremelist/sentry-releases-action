@@ -18,7 +18,8 @@ const run = async () => {
     });
 
     // This removes the 'refs/tags' portion of the string, i.e. from 'refs/tags/v1.0.0' to 'v1.0.0'
-    const tag = tagName.replace('refs/tags/', '');
+    const preTag = tagName.replace('refs/tags/', '');
+    const tag = preTag.substring(1);
     let releaseName = tag;
 
     if (releaseNamePrefix) {
